@@ -9,9 +9,9 @@ export const NAV_LINKS = [
 ];
 
 export const SOCIAL_LINKS = [
-  { href: "https://www.linkedin.com/", label: "LinkedIn" },
-  { href: "https://www.instagram.com/", label: "Instagram" },
-  { href: "https://github.com/", label: "Github" },
+  { href: "https://www.linkedin.com/in/pandu-putra-91907a267/", label: "LinkedIn" },
+  { href: "https://www.instagram.com/panduputra___/", label: "Instagram" },
+  { href: "https://github.com/panduputrariadi", label: "Github" },
 ];
 
 export const SERVICES = [

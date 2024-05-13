@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navbar from "@/components/navbar/NavbarSection";
+import FooterSection from "@/components/footer/FooterSection";
 
 export const metadata: Metadata = {
   title: "Pandu Putra Home Page",

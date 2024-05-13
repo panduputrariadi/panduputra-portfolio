@@ -1,4 +1,5 @@
 "use client";
+import ContactSection from "@/components/contact/ContactSection";
 import FooterSection from "@/components/footer/FooterSection";
 import HeroSection from "@/components/hero/HeroSection";
 import HistorySection from "@/components/history/HistorySection";
@@ -16,6 +17,7 @@ export default function Home() {
         <HistorySection />
         <ServiceSection />
         <ProjectSection />
+        <ContactSection />
         <FooterSection />
       </main>
     </NextUIProvider>

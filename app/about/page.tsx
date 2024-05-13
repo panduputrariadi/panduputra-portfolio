@@ -1,9 +1,15 @@
-import React from 'react'
+"use client";
+import FooterSection from "@/components/footer/FooterSection";
+import Navbar from "@/components/navbar/NavbarSection";
+import React from "react";
 
 const about = () => {
   return (
-    <div className='bg-slate-400'>about</div>
-  )
-}
+    <div>
+      <Navbar />
+      <FooterSection />
+    </div>
+  );
+};
 
-export default about
+export default about;
