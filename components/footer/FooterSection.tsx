@@ -1,8 +1,8 @@
 import { SOCIAL_LINKS } from "@/constant/constant";
-import { NavbarItem } from "@nextui-org/navbar";
 import Link from "next/link";
 import React from "react";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const FooterSection = () => {
   return (
@@ -17,30 +17,54 @@ const FooterSection = () => {
                 xmlns="http://www.w3.org/2000/svg"
               ></svg>
             </a>
-            <p className="mt-2 text-sm text-gray-500">Design, Code and Ship!</p>
+            <p className="mt-2 text-sm text-gray-500">
+              I Made Pandu Putra Riadi
+            </p>
             <div className="mt-4">
               <span className="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
                 {SOCIAL_LINKS.map((link, index) => (
-                  <div key={index} className="hidden m-3 lg:flex">
+                  <motion.div
+                    key={index}
+                    className="hidden m-3 lg:flex"
+                    whileHover={{ y: -5 }}
+                  >
                     {link.label === "LinkedIn" && (
-                      <FaLinkedinIn
-                        className="w-6 h-6"
-                        style={{ color: "#0077B5" }}
-                      />
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaLinkedinIn
+                          className="w-6 h-6"
+                          style={{ color: "#0077B5" }}
+                        />
+                      </a>
                     )}
                     {link.label === "Instagram" && (
-                      <FaInstagram
-                        className="w-6 h-6"
-                        style={{ color: "#E4405F" }}
-                      />
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaInstagram
+                          className="w-6 h-6"
+                          style={{ color: "#E4405F" }}
+                        />
+                      </a>
                     )}
                     {link.label === "Github" && (
-                      <FaGithub
-                        className="w-6 h-6"
-                        style={{ color: "#4078c0" }}
-                      />
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaGithub
+                          className="w-6 h-6"
+                          style={{ color: "#4078c0" }}
+                        />
+                      </a>
                     )}
-                  </div>
+                  </motion.div>
                 ))}
               </span>
             </div>
@@ -125,7 +149,7 @@ const FooterSection = () => {
                     Send Me an Email
                   </a>
                 </li>
-                
+
                 <li className="mt-3">
                   <a className="text-gray-500 cursor-pointer hover:text-gray-900">
                     +6285-1576-22179

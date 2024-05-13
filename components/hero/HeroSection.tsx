@@ -1,56 +1,29 @@
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <div className="relative overflow-hidden h-[500px]">
-      <div aria-hidden="true" className="flex absolute -top-96 start-1/2 transform -translate-x-1/2">
-        <div className="bg-gradient-to-r from-violet-300/50 to-purple-100 blur-3xl w-[25rem] h-[44rem] rotate-[-60deg] transform -translate-x-[10rem] dark:from-violet-900/50 dark:to-purple-900"></div>
-        <div className="bg-gradient-to-tl from-blue-50 via-blue-100 to-blue-50 blur-3xl w-[90rem] h-[50rem] rounded-fulls origin-top-left -rotate-12 -translate-x-[15rem] dark:from-indigo-900/70 dark:via-indigo-900/70 dark:to-blue-900/70"></div>
-      </div>
-
-      <div className="relative z-10">
-        <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
-          <div className="max-w-2xl text-center mx-auto">
-            <p className="inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
-              I Made Pandu Putra Riadi
-            </p>
-
-            <div className="mt-5 max-w-2xl">
-              <h1 className="block font-semibold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-gray-200">
-                Software Developer
-              </h1>
-            </div>
-
-            <div className="mt-5 max-w-3xl">
-              <p className="text-lg text-gray-500 dark:text-gray-400 leading-10">
-                I am Software developer who has interest to be Full Stack Developer
-              </p>
-            </div>
-
-            <div className="mt-8 gap-3 flex justify-center">
-              <Link
-                className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                href="#"
-              >
-                Download CV
-                <svg
-                  className="flex-shrink-0 w-4 h-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="m9 18 6-6-6-6" />
-                </svg>
-              </Link>
-            </div>
-          </div>
+    <div className="bg-gray-100">
+      <div className="container mx-auto flex flex-col items-center py-12 sm:py-24">
+        <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col  mb-5 sm:mb-10">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-gray-800 font-black leading-7 md:leading-10">
+            I Made Pandu Putra Riadi Software
+            <span className="text-indigo-700"> Developer</span>
+          </h1>
+          <p className="mt-5 sm:mt-10 lg:w-10/12 text-gray-400 font-normal text-center text-sm sm:text-lg">
+            As an experienced software developer, I excel in solving various
+            issues that clients may encounter. With a deep understanding of
+            technology and software development methodologies, I can deliver
+            innovative and effective solutions. From programming to design, I am
+            committed to providing solutions that meet client needs and produce
+            high-quality software products.
+          </p>
+        </div>
+        <div className="flex justify-center items-center">
+          <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 bg-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 lg:text-xl lg:font-bold  rounded text-white px-4 sm:px-10 border border-indigo-700 py-2 sm:py-4 text-sm">
+            Get Started
+          </button>
         </div>
       </div>
     </div>
