@@ -1,18 +1,21 @@
+import { useRouter } from "next/navigation";
 import { NAV_LINKS } from "@/constant/constant";
 import Link from "next/link";
 import React from "react";
 
 const MiddleMenuNavbar = () => {
-  const activePath = typeof window !== 'undefined' && window.location.pathname.startsWith;
+  const router = useRouter();
+
+  const appRouter = router as any;
 
   return (
-    <div className="flex items-center gap-6 font-bold text-medium uppercase">
+    <div className="flex items-center gap-6 font-semibold uppercase">
       {NAV_LINKS.map((link, index) => (
         <div key={index} className="relative">
           <Link
             href={link.href}
             className={`cursor-pointer transition duration-300 ease-in-out hover:text-blue-600 ${
-              activePath && window.location.pathname.startsWith(link.href) ? "text-blue-600" : ""
+              appRouter.pathname === link.href ? "text-blue-600" : ""
             }`}
             passHref
           >
