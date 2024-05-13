@@ -4,9 +4,7 @@ import Link from "next/link";
 import React from "react";
 
 const MiddleMenuNavbar = () => {
-  const router = useRouter();
 
-  const appRouter = router as any;
 
   return (
     <div className="hidden lg:flex items-center gap-6 font-semibold uppercase">
@@ -14,10 +12,7 @@ const MiddleMenuNavbar = () => {
         <div key={index} className="relative">
           <Link
             href={link.href}
-            className={`cursor-pointer transition duration-300 ease-in-out hover:text-blue-600 ${
-              appRouter.pathname === link.href ? "text-blue-600" : ""
-            }`}
-            passHref
+            className="cursor-pointer transition duration-300 ease-in-out hover:text-blue-600"
           >
             {link.label}
           </Link>

@@ -19,7 +19,7 @@ const SectionListProject = () => {
               <div key={project.id} className="p-6 mb-6 shadow transition duration-300 group transform hover:-translate-y-2 hover:shadow-2xl rounded-2xl cursor-pointer border">
                 <Link target="_blank" href={`${project.href}`} className="absolute opacity-0 top-0 right-0 left-0 bottom-0"></Link>
                 <div className="relative mb-4 rounded-2xl">
-                  <Image src={project.imageUrl} alt={project.title} width={500} height={500} />
+                  <Image src={project.imageUrl} alt={project.title} width={500} height={500}/>
                   <Link className="flex justify-center items-center bg-blue-600 bg-opacity-80 z-10 absolute top-0 left-0 w-full h-full text-white opacity-0 transition-all duration-300 transform group-hover:scale-10 text-xl group-hover:opacity-100" href={`${project.href}`} target="_blank" rel="noopener noreferrer">
                     Go To Source Code
                     <svg className="ml-2 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

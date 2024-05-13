@@ -10,17 +10,12 @@ import { NextUIProvider } from "@nextui-org/react";
 
 export default function Home() {
   return (
-    <NextUIProvider>
-      <main className="w-full h-full bg-light">
-        <NavbarSection />
-        <HeroSection />
-        <HistorySection />
-        <ServiceSection />
-        <ProjectSection />
-        <ContactSection />
-        <FooterSection />
-      </main>
-    </NextUIProvider>
-    
+    <main className="w-full h-full bg-light">
+      <HeroSection />
+      <HistorySection />
+      <ServiceSection />
+      <ProjectSection />
+      <ContactSection />
+    </main>
   );
 }

@@ -1,5 +1,7 @@
 "use client";
 
+import FooterSection from "@/components/footer/FooterSection";
+import Navbar from "@/components/navbar/NavbarSection";
 import { animatePageIn } from "@/utils/animation";
 import { useEffect } from "react";
 
@@ -8,8 +10,11 @@ export default function Template({ children }: { children: React.ReactNode }) {
     animatePageIn()
   }, [])
   return (
-    <div className="">
+    <main className="w-full h-full">
+      <Navbar />
       {children}
-    </div>
+      <FooterSection />
+    </main>
+    
   );
 }

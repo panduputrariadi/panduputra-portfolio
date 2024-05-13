@@ -1,14 +1,14 @@
 "use client";
-import FooterSection from "@/components/footer/FooterSection";
-import Navbar from "@/components/navbar/NavbarSection";
+import Education from "@/components/aboutComponent/Education";
+import Profile from "@/components/aboutComponent/Profile";
 import React from "react";
 
 const about = () => {
   return (
-    <div>
-      <Navbar />
-      <FooterSection />
-    </div>
+    <>
+      <Profile />
+      <Education />
+    </>
   );
 };
 

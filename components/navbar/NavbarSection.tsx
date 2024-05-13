@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     <main className="mb-[88px]">
-      <nav className="fixed top-0 left-0 right-0 bg-white shadow-md px-20 py-6 flex justify-between items-center">
+      <nav className="fixed top-0 left-0 right-0 bg-white shadow-md px-20 py-6 flex justify-between items-center z-50">
         <div className="flex gap-8">
           <section className="flex items-center gap-4">
 
@@ -29,7 +29,7 @@ export default function Navbar() {
         
         <MiddleMenuNavbar />
 
-        <div className={clsx("fixed h-full w-screen mx-[45px] lg:hidden bg-black/50  backdrop-blur-sm top-0 right-0  -translate-x-full  transition-all ", isSideMenuOpen && "translate-x-0")}>
+        <div className={clsx("lg:hidden bg-black/50  backdrop-blur-sm top-0 right-0  -translate-x-full  transition-all fixed h-full w-full ", isSideMenuOpen && "translate-x-0")}>
           <section className="text-black bg-white flex-col absolute left-0 top-0 h-screen p-8 gap-8 z-50 w-56 flex">
             <IoCloseOutline
               onClick={() => setMenu(false)}

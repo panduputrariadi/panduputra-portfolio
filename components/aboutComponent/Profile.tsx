@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 
-const HistorySection = () => {
+const Profile = () => {
   return (
     <div id="about" className="bg-light sm:p-10 lg:p-20">
       <motion.div
@@ -22,38 +22,38 @@ const HistorySection = () => {
         <div className="sm:columns-2">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x:0 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-              <Image
-                src={"/images/person-1.png"}
-                alt="person"
-                width={400}
-                height={400}
-              />
+            <Image
+              src={"/images/person-1.png"}
+              alt="person"
+              width={400}
+              height={400}
+            />
           </motion.div>
-          
+
           <div className="P-10">
             <motion.h2
               className="text-bold text-2xl mb-3"
               initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x:0 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               Full Stack Web Developer
             </motion.h2>
-            <motion.p 
+            <motion.p
               className="mb-5 text-sm text-gray-400"
               initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x:0 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               Providing web solutions
             </motion.p>
-            <motion.p 
+            <motion.p
               className="text-gray-500 text-justify leading-10"
               initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x:0 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               Hello there! I am a full stack web developer, and I am very
@@ -69,4 +69,4 @@ const HistorySection = () => {
   );
 };
 
-export default HistorySection;
+export default Profile;
