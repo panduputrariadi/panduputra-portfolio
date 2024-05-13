@@ -9,7 +9,7 @@ const MiddleMenuNavbar = () => {
   const appRouter = router as any;
 
   return (
-    <div className="flex items-center gap-6 font-semibold uppercase">
+    <div className="hidden lg:flex items-center gap-6 font-semibold uppercase">
       {NAV_LINKS.map((link, index) => (
         <div key={index} className="relative">
           <Link
