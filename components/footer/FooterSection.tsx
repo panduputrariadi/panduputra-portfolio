@@ -149,12 +149,6 @@ const FooterSection = () => {
                     Send Me an Email
                   </a>
                 </li>
-
-                <li className="mt-3">
-                  <a className="text-gray-500 cursor-pointer hover:text-gray-900">
-                    +6285-1576-22179
-                  </a>
-                </li>
               </nav>
             </div>
           </div>

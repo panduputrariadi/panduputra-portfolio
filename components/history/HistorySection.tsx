@@ -9,7 +9,7 @@ const HistorySection = () => {
       <motion.div
         className="text-center mx-auto mb-12 lg:mb-20 max-w-[510px]"
         initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
         <span className="font-semibold text-lg text-primary mb-2 block">
@@ -64,11 +64,16 @@ const HistorySection = () => {
             collaboration.
           </motion.p>
           <motion.div
-            className="text-center lg:text-left"
+            className="text-center lg:text-left flex gap-10"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
+            <Link href="/about">
+              <p className="inline-block mt-5 px-6 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300">
+                Learn More About Me
+              </p>
+            </Link>
             <Link href="/about">
               <p className="inline-block mt-5 px-6 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300">
                 Learn More About Me
