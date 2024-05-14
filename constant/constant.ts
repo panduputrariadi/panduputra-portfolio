@@ -17,7 +17,7 @@ export const SOCIAL_LINKS = [
 export const SERVICES = [
   {
     title: "Refreshing Design Website",
-    description:"Working with using refreshing design and modern design website",
+    description: "Working with using refreshing design and modern design with Next.js and React",
     label: "Monitor",
   },
   {
@@ -28,6 +28,16 @@ export const SERVICES = [
   {
     title: "Tech Update",
     description: "Using the newest technology update to implement client needs",
+    label: "Code",
+  },
+  {
+    title: "Full Stack Development with Laravel",
+    description: "Building full stack applications using Laravel framework",
+    label: "Layout",
+  },
+  {
+    title: "API Endpoint Development with Golang",
+    description: "Developing efficient API endpoints using Golang programming language",
     label: "Code",
   },
 ];

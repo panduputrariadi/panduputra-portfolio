@@ -1,7 +1,7 @@
 import { SERVICES } from "@/constant/constant";
 import React from "react";
 import { FiCode, FiLayout, FiMonitor } from "react-icons/fi";
-import { motion, useAnimation } from "framer-motion";
+import { motion} from "framer-motion";
 
 const ServiceSection = () => {
   return (

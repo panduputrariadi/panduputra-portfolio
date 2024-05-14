@@ -11,8 +11,8 @@ export default function Navbar() {
   const [isSideMenuOpen, setMenu] = useState(false);
 
   return (
-    <main className="mb-[88px]">
-      <nav className="fixed top-0 left-0 right-0 bg-white shadow-md px-20 py-6 flex justify-between items-center z-50">
+    <main className="">
+      <nav className="bg-white shadow-md px-20 py-6 flex justify-between items-center">
         <div className="flex gap-8">
           <section className="flex items-center gap-4">
 
