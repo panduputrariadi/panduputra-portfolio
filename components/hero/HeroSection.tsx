@@ -51,7 +51,7 @@ const HeroSection = () => {
             committed to providing solutions that meet client needs and produce
             high-quality software products.
           </motion.p>
-          <Link href="/about">
+          <Link href="/cv-pandu.pdf" download={true} target="_blank">
             <p className="sm:px-3 lg:mt-5 px-6 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300">
               Download CV
             </p>
