@@ -7,7 +7,7 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 const SideBarMenu = () => {
   const pathname = usePathname();
   return (
-    <div>
+    <div className="sm:mx-10">
       {NAV_LINKS.map((link, index) => (
         <div key={index} className="my-10">
           <Link

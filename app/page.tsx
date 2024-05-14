@@ -6,6 +6,7 @@ import HistorySection from "@/components/history/HistorySection";
 import NavbarSection from "@/components/navbar/NavbarSection";
 import ProjectSection from "@/components/projects/ProjectSection";
 import ServiceSection from "@/components/service/ServiceSection";
+import TestimonialSection from "@/components/testimonials/TestimonialSection";
 import { NextUIProvider } from "@nextui-org/react";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <HistorySection />
       <ServiceSection />
       <ProjectSection />
+      <TestimonialSection />
       <ContactSection />
     </main>
   );
