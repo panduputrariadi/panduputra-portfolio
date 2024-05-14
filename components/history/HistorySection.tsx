@@ -74,11 +74,6 @@ const HistorySection = () => {
                 Learn More About Me
               </p>
             </Link>
-            <Link href="/about">
-              <p className="inline-block mt-5 px-6 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300">
-                Learn More About Me
-              </p>
-            </Link>
           </motion.div>
         </div>
       </div>
